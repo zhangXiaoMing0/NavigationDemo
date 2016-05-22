@@ -15,6 +15,8 @@
 		C46BBF461C546B93001AF4D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46BBF441C546B93001AF4D5 /* LaunchScreen.storyboard */; };
 		C46BBF511C546B93001AF4D5 /* FNNavigationBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C46BBF501C546B93001AF4D5 /* FNNavigationBarTests.m */; };
 		C46BBF5C1C546B93001AF4D5 /* FNNavigationBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C46BBF5B1C546B93001AF4D5 /* FNNavigationBarUITests.m */; };
+		C46BBF6B1C546CC4001AF4D5 /* FNHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C46BBF6A1C546CC4001AF4D5 /* FNHomeViewController.m */; };
+		C46BBF6E1C5482E3001AF4D5 /* FNHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C46BBF6D1C5482E3001AF4D5 /* FNHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		C46BBF571C546B93001AF4D5 /* FNNavigationBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FNNavigationBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C46BBF5B1C546B93001AF4D5 /* FNNavigationBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNNavigationBarUITests.m; sourceTree = "<group>"; };
 		C46BBF5D1C546B93001AF4D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C46BBF691C546CC4001AF4D5 /* FNHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNHomeViewController.h; sourceTree = "<group>"; };
+		C46BBF6A1C546CC4001AF4D5 /* FNHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNHomeViewController.m; sourceTree = "<group>"; };
+		C46BBF6C1C5482E3001AF4D5 /* FNHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNHeaderView.h; sourceTree = "<group>"; };
+		C46BBF6D1C5482E3001AF4D5 /* FNHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNHeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,10 @@
 			children = (
 				C46BBF391C546B93001AF4D5 /* AppDelegate.h */,
 				C46BBF3A1C546B93001AF4D5 /* AppDelegate.m */,
+				C46BBF691C546CC4001AF4D5 /* FNHomeViewController.h */,
+				C46BBF6A1C546CC4001AF4D5 /* FNHomeViewController.m */,
+				C46BBF6C1C5482E3001AF4D5 /* FNHeaderView.h */,
+				C46BBF6D1C5482E3001AF4D5 /* FNHeaderView.m */,
 				C46BBF3C1C546B93001AF4D5 /* ViewController.h */,
 				C46BBF3D1C546B93001AF4D5 /* ViewController.m */,
 				C46BBF3F1C546B93001AF4D5 /* Main.storyboard */,
@@ -270,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46BBF6E1C5482E3001AF4D5 /* FNHeaderView.m in Sources */,
 				C46BBF3E1C546B93001AF4D5 /* ViewController.m in Sources */,
+				C46BBF6B1C546CC4001AF4D5 /* FNHomeViewController.m in Sources */,
 				C46BBF3B1C546B93001AF4D5 /* AppDelegate.m in Sources */,
 				C46BBF381C546B93001AF4D5 /* main.m in Sources */,
 			);
@@ -412,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FNNavigationBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = feiniu.FNNavigationBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FNNavigationBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = feiniu.FNNavigationBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +510,7 @@
 				C46BBF621C546B93001AF4D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C46BBF631C546B93001AF4D5 /* Build configuration list for PBXNativeTarget "FNNavigationBarTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +519,7 @@
 				C46BBF651C546B93001AF4D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C46BBF661C546B93001AF4D5 /* Build configuration list for PBXNativeTarget "FNNavigationBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +528,7 @@
 				C46BBF681C546B93001AF4D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
